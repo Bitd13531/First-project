@@ -93,3 +93,7 @@ footer {
   margin-right: 10%;
   margin-left: 10%; 
 }
+
+.box-telefono{
+    padding: calc(var(--header-height) + 1rem) 1rem 0;
+}
