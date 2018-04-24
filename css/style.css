@@ -1,9 +1,95 @@
+:root{
+--cta-color: #007BDF;
+--cta-color-alt:#006DC6;
+--second-color:#00CBFF;
+--second-color-alt: #00BFF0;
+--first-color: #FF3C32;
+--first-color-alt: #FF2419;
+--first-color-rgba: rgba(255,60,50,.5);
+--third-color: #FBA905;
+--third-color-alt: #F1A000;
+--dark-color: #282D31;
+--dark-color-alt: #141618;
+--border-color: #DFE0E0;
+--text-color: #53575A;
+--body-bg: #FAFDFF;
+--font-size: 16px;
+--font-main: roboto;
+--font-second: Raleway;
+--line-height: 1.6;
+--header-height: 8rem;
+--max-width: 1200px;
+}
+
+html {
+  background-color: var(--body-bg);
+  font-family: var(--font-second),  sans-serif;
+  box-sizing:border-box;
+  /*font-family: var(--font-main);*/
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+  color: var(--text-color);
+}
+
+
+h1,h2,h3,h4,h5,h6{
+  font-family: var(--font-main), sans-serif;
+}
+
+
 
 a {
   text-decoration: none;
+  display: inline;
+  text-align: right;
+  
 }
-header .logo-menu img {
-  display: inline-block;
+nav a {
+  color: whitesmoke;
+}
 
+nav{
+  align-items: flex-start;
+  text-align: right;
+  word-spacing: 15px;
+  
+}
+/*corregir la separacion del menu cotiza con nosotros*/
 
+nav a:nth-child(3){
+  word-spacing: .8px;
+}
+
+.menu-container {
+ 
+  position:fixed;
+  width: 80%;
+  height: var(--header-height);
+  background: linear-gradient(to top right,  var(--first-color) , var(--first-color-rgba)),
+  url(../img/mud21.jpg);
+  /*background-image: url(/img/mud21.jpg);*/
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: var(--border-color);
+  font-size:1.25rem;
+}
+
+.logo-menu img{
+ display: inline-block;
+}
+
+.logo-menu, 
+.logo-menu img {
+  display: grid;
+}
+
+.box-main, 
+.box-card1,
+.box-card2,
+.menu-container,
+.box-telefono,
+.form-box,
+footer {
+  margin-right: 10%;
+  margin-left: 10%; 
 }
