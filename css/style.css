@@ -72,6 +72,7 @@ nav a:nth-child(3){
   background-repeat: no-repeat;
   color: var(--border-color);
   font-size:1.05rem;
+  vertical-align: middle;
   
   
   
@@ -153,7 +154,7 @@ footer a:hover{
 .form-box{
   background-image: linear-gradient(to bottom, var(--first-color) 60%, brown 95%);
   width: 20%;
-  background-size: cover;
+  height: 66vh;
   margin-bottom: 3rem;
   color: rgb(241, 193, 193);
   padding-left: 2rem ;
@@ -162,6 +163,18 @@ footer a:hover{
   box-shadow: 2px 4px 5px rgba(0,0 ,0, .5);
   line-height: 1.8rem;
   
+}
+
+  input[type=submit] {
+  background-color: var(--cta-color);
+  color: rgb(181, 226, 222);
+  margin-top: 2px;
+  align-items: right;
+  border-radius: 4px;
+  box-shadow: 2px 3px 4px rgba(0,0 ,0, .5);
+  cursor: pointer;
+  padding: 4px;
+  margin-bottom: 2px;
 }
 
 label, 
