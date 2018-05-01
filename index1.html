@@ -17,6 +17,7 @@
 <body>
   <header>
 
+    <div class="box-main">
     <div class="menu-container">
       <div class="logo-menu">
         <img src="./img/logo1.png">
@@ -25,70 +26,76 @@
       <nav>
         <a href="index1.html" class="nav-link">Inicio</a>
         <a href="services.html" class="nav-link">Servicios</a>
-        <a href="form-contact.html" class="nav-link">Cotiza con nosotros</a>
-        <a href="oficinas.html" class="nav-link">Contactanos</a>
+        <a href="form-contact.html" class="nav-link">Contactanos</a>
+        <a href="oficinas.html" class="nav-link">Oficinas</a>
       </nav>
     </div>
 
 
-    <div class="box-main">
-      <div class="slider-container">
-        <div class="slider">
-          <img src="" alt="">
-          <img src="" alt="">
-          <img src="" alt="">
-          <img src="" alt="">
+      <div class="slider-container row around-xs top-xs">
+        <div class="slider col-xs-7 center-xs">
+        </div>
+        <div class="box-telefono col-xs-2 center-xs middle-xs">
+          <a href="https://api.whatsapp.com/send?phone=56931929175">
+            <p>
+              <span>Nuestros Telefonos:</span>
+              <br>+56-931929175
+              <br>+56-931929175</p>
+          </a>
         </div>
       </div>
+        <div class="row end-xs top-xs">
+          <div class="form-box col-xs-3 start-xs">
+            <form >
+              <h3>Contacto</h3>
+              <label class="form-item" for="name">Nombre</label>
+              <input class="form-item" name="name" type="text" placeholder="Ingrese aqui su Nombre y Apellido" required>
+              <label class="form-item" for="email">Correo Electronico</label>
+              <input class="form-item" name="email" type="email" placeholder="Ingrese aqui su correo" required>
+              <label class="form-item" for="telefono">Telefono</label>
+              <input class="form-item" name="telefono" type="text" placeholder="Ingrese aqui su numero de telefono" required>
+              <label class="form-item" for="msj">Mensaje</label>
+              <input class="form-item" name="msj" type="text" placeholder="Ingrese aqui su mensaje" required>
+              <input class="form-item" type="submit" method="post" action="mailto:anvill_2002@hotmail.com" value="Enviar Mensaje">
+            </form>
+          </div>
+        </div>
 
-      <div class="box-telefono">
-        <a href="https://api.whatsapp.com/send?phone=56931929175">
-          <p>
-            <span>Nuestros Telefonos:</span>
-            <br>+56-931929175
-            <br>+56-931929175</p>
-        </a>
-      </div>
-      <div class="box-main-description">
-        <h1>Mudanzas Ladino</h1>
-        <article>El Mejor Servicio de Mudanzas y fletes en todo Chile, El mas rápido, el más seguro y el más confiable. Ofrecemos
-          el mejor servicio con el precio mas bajo del mercado, por eso somos insuperables!
-        </article>
-      </div>
-      <ar>
-        <h2>Porque Elegirnos</h2>
-      </ar>
+      <div class="box-bd row center-xs middle-xs">
 
-      <div class="box-card1">
-        <h3>SERVICIO PROFESIONAL</h3>
-        <p>Somos su mejor opcion en servicio de mudanzas, bodegas, transportes y fletes, ya que contamos con una flota de vehiculos
-          especializados, personal profesional capacitado, brindando a todos nuestros clientes calidad de servicio, cuidado
-          de sus bienes, rapidez y eficiencia garantizada en todo momento!</p>
-      </div>
+        <div class="col-xs-12 ">
+          <h1>Mudanzas Ladino</h1>
+          <article>El Mejor Servicio de Mudanzas y fletes en todo Chile, El mas rápido, el más seguro y el más confiable. Ofrecemos
+            el mejor servicio con el precio mas bajo del mercado, por eso somos insuperables!
+          </article>
+        </div>
+       
+        <!-- Agregar una imagen en cada uno de los card box para luego ubicarlos uno al lado del otro en filas y columnas -->
+        <div class="box-colletion row around-xs">
 
-      <div class="box-card2">
-        <h3>MUDANZAS A TODO EL PAIS</h3>
-        <p>Realizamos mudanzas, transporte y fletes en la Region Metropolitana y hacia todo Chile en el horario que usted necesite,
-          ofreciendo servicio de mudanzas consolidadas o exclusivas segun sea su necesidad y brindandole asesoria telefonica
-          en todo momento, para que elija el servicio que mas se adapte a sus necesidades y por un costo mucho mas bajo!
-        </p>
+          <ar class="col-xs-12 center-xs">
+            <h2>Porque Elegirnos</h2>
+          </ar>
+          
+          <div class="box-card1 col-xs-5">
+            <h3>SERVICIO PROFESIONAL</h3>
+            <p>Somos su mejor opcion en servicio de mudanzas, bodegas, transportes y fletes, ya que contamos con una flota de vehiculos
+              especializados, personal profesional capacitado, brindando a todos nuestros clientes calidad de servicio, cuidado
+              de sus bienes, rapidez y eficiencia garantizada en todo momento!</p>
+            </div>
+            
+            <div class="box-card2 col-xs-5">
+              <h3>MUDANZAS A TODO EL PAIS</h3>
+              <p>Realizamos mudanzas, transporte y fletes en la Region Metropolitana y hacia todo Chile en el horario que usted necesite,
+                ofreciendo servicio de mudanzas consolidadas o exclusivas segun sea su necesidad y brindandole asesoria telefonica
+                en todo momento, para que elija el servicio que mas se adapte a sus necesidades y por un costo mucho mas bajo!
+              </p>
+            </div>
+          </div>
+          
+          
+        </div>
       </div>
-
-      <div class="form-box">
-        <form>
-          <h3>Contacto</h3>
-          <label for="name">Nombre</label>
-          <input name="name" type="text" placeholder="Ingrese aqui su Nombre y Apellido" required>
-          <label for="email">Correo Electronico</label>
-          <input name="email" type="email" placeholder="Ingrese aqui su correo" required>
-          <label for="telefono">Telefono</label>
-          <input name="telefono" type="text" placeholder="Ingrese aqui su numero de telefono" required>
-          <label for="msj">Mensaje</label>
-          <input name="msj" type="text" placeholder="Ingrese aqui su mensaje" required>
-          <input type="submit" value="Enviar Mensaje">
-        </form>
-      </div>
-    </div>
   </header>
 
   <footer>
@@ -96,12 +103,12 @@
       <div class="socialnetwork row">
 
         <div class="face">
-          <img src="./img/icon/png/face.png" alt="Visita nuestra Página en Facebook, Mudanzas Ladino">
+          <a href="https://web.facebook.com/mudanzasladino/" target="_blank"><img src="./img/icon/png/face.png" alt="Visita nuestra Página en Facebook, Mudanzas Ladino"></a>
         </div>
         <div class="insta">
           <img src="./img/icon/png/insta.png" alt="Visitanos en nuestra red social Instagram">
         </div>
-        <div class="telf-contacto col-xs-10">
+        <div class="telf-contacto col-xs-12">
           Telefono de Contacto +56-931929175
         </div>
         <div class="direccion col-xs-12 center-xs">

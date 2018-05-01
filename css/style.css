@@ -20,17 +20,24 @@
 --header-height: 6rem;
 --max-width: 1200px;
 }
+*,*::before, *::after{
+box-sizing: border-box;
+}
 
 html {
   background-color: var(--body-bg);
   font-family: var(--font-second),  sans-serif;
-  box-sizing:border-box;
   /*font-family: var(--font-main);*/
   font-size: var(--font-size);
   line-height: var(--line-height);
   color: var(--text-color);
 }
-
+body{
+  position: relative;
+  margin-right: 10%;
+  margin-left: 10%; 
+  margin-top: 6rem;
+}
 h1,h2,h3,h4,h5,h6{font-family: var(--font-main), sans-serif;}
 a {
   text-decoration: none;
@@ -54,13 +61,14 @@ nav a:nth-child(3){
   word-spacing: .8px;
 }
 nav a:hover{
-  border-bottom: solid 3px var(--third-color-alt);
-  padding-bottom: 13px;
+  border-bottom: solid 2px yellow;
+  padding-bottom: 14px;
 }
 
 .menu-container {
  
   position:fixed;
+  top: 0;
   width: 80%;
   height: var(--header-height);
   background: linear-gradient(to top right,  var(--first-color) , var(--first-color-rgba)),
@@ -89,7 +97,7 @@ nav a:hover{
   top: calc(var(--header-height)*1.05);
   padding-bottom: 3px;
 }
-.box-main, 
+/* .box-main, 
 .box-card1,
 .box-card2,
 .menu-container,
@@ -99,25 +107,61 @@ footer {
   margin-right: 10%;
   margin-left: 10%; 
 }
-
+ */
 .box-telefono{
     display: flex;
     background-image: linear-gradient(var(--third-color), var(--third-color-alt));
-    width: 15%;
-    height: 25vh;
+    height: 150px;
     border-radius: 3px;
     box-shadow: 2px 4px 5px rgba(0,0 ,0, .5);
+    margin-top: 2rem;
+    margin-left: -4rem;
     
 }
 
+.slider-container {
+  margin-left: 3rem;
+  
+}
+.slider {
+  margin: .5rem 0;
+  width: 480px;
+  height: 360px;
+  box-shadow: 3px 2px 4px rgba(0,0,0,0.5);
+  background-size: cover;
+  animation: changepic 15s infinite 2s alternate ease-in;
+  -webkit-animation: changepic 15s infinite 2s alternate ease-in;
+  border-radius: 4px;
+
+}
+
+@keyframes changepic {
+0% ,33% {background-image: url(../img/mud12.jpg);}
+33%, 66% {background-image: url(../img/mud21.jpg);}
+66%, 100%{background-image: url(../img/mud3.jpg);}
+
+
+}
+h1{
+  margin-top: -8rem;
+  margin-left: -10rem;
+}
+.office {
+  margin-top: -8rem;
+  margin-left: 18rem;
+  padding-left: -8rem;
+}
+.box-bd{
+  margin: inherit;
+}
 .box-card1,
 .box-card2,
 .box-card3,
 .box-main-description{
   display: flex;
   background-color: var(--cta-color-alt);
-  width: 40%;
-  height: 35%;
+  /* width: 40%;
+  height: 35%; */
   border-radius: 3px;
   box-shadow: 2px 4px 5px rgba(0,0 ,0, .5);
   margin-bottom: 1rem;
@@ -126,8 +170,27 @@ footer {
   padding-right: 1%;
   color: rgb(152, 231, 223);
   flex-wrap: wrap;
+  text-align: justify;
+}
+.row > .box-card1,
+.row > .box-card2,
+.row > .box-card3{
+  margin-left: 2rem;
+  margin-top: 2rem;
+}
+.box-card1 h3,
+.box-card2 h3,
+.box-card3 h3{
+  margin-left: 25%;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
+article{
+  padding-right: 18rem;
+  padding-left: 5rem;
+  text-align: left;
+}
 
 .box-telefono p span,
 .box-telefono a{
@@ -135,9 +198,7 @@ footer {
   
   .form-box{
     background-image: linear-gradient(to bottom, var(--first-color) 60%, brown 95%);
-    width: 200px;
-    height: 220%;
-   color: rgb(241, 193, 193);
+    color: rgb(241, 193, 193);
     padding-left: 2rem ;
     padding-right: -2rem;
     padding-bottom: 3px;
@@ -145,10 +206,10 @@ footer {
     box-shadow: 2px 4px 5px rgba(0,0 ,0, .5);
     line-height: 1.8rem;
     margin-bottom: 4px;
-    
-    
+    margin-top: -10rem;
+    margin-right: 2rem;
   }
-  
+    
     input[type=submit] {
     background-color: var(--cta-color);
     color: rgb(181, 226, 222);
@@ -162,8 +223,7 @@ footer {
   }
   
   label, 
-  input
-  .form-box{
+  .form-box .form-item{
   display: block;
   }
   
@@ -183,9 +243,13 @@ footer{
   color: var(--text-color);
   text-align: center;
   flex-wrap: nowrap;
+  position: absolute;
+
 
 }  
-.container-socialnetwork {margin: inherit;}
+ .container-socialnetwork {
+  position: relative; 
+} 
 footer a {
   text-decoration: none;
   color: var(--text-color);
@@ -194,23 +258,16 @@ footer a:hover{
   text-decoration: underline;
   color: rgb(173, 166, 166);
 }  
-
-.socialnetwork .insta img {
-  margin-top: 8px;
+.socialnetwork .face img,
+.socialnetwork .insta img{
+  position: absolute;
+  top: 24px;
   height: 50px;
   width: 50px;
-  justify-content: center;
-  margin-left: 3rem;
   opacity: 0.5;
-  
- }
- .socialnetwork .face img {
-  margin-top: 8px;
-  height: 50px;
-  width: 50px;
-  justify-content: center;
-  opacity: 0.5;
- }
+}
+.socialnetwork .insta img {left: 14rem;}
+ .socialnetwork .face img {left:8rem;}
  .socialnetwork .face img:hover{
    opacity: 1;
    cursor: pointer;
@@ -223,7 +280,7 @@ footer a:hover{
    justify-content: baseline;
    text-align: center;
    margin-top: 3rem;
-   margin-left: -4rem;
+  /*  margin-left: -4rem; */
    
  }
 
