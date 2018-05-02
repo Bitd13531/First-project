@@ -18,20 +18,20 @@
   <header>
 
     <div class="box-main">
-    <div class="menu-container">
-      <div class="logo-menu">
-        <img src="./img/logo1.png">
-      </div>
+      <div class="menu-container">
+        <div class="logo-menu">
+          <img src="./img/logo1.png">
+        </div>
 
-      <nav>
+        <nav>
           <a href="index1.html" class="nav-link">Inicio</a>
           <a href="services.html" class="nav-link">Servicios</a>
           <a href="form-contact.html" class="nav-link">Contactanos</a>
           <a href="oficinas.html" class="nav-link">Oficinas</a>
-      </nav>
-    </div>
+        </nav>
+      </div>
 
-    <div class="slider-container row around-xs top-xs">
+      <div class="slider-container row around-xs top-xs">
         <div class="slider col-xs-7 center-xs">
         </div>
         <div class="box-telefono col-xs-2 center-xs middle-xs">
@@ -43,22 +43,23 @@
           </a>
         </div>
       </div>
-        <div class="row end-xs top-xs">
-          <div class="form-box col-xs-3 start-xs">
-            <form>
-              <h3>Contacto</h3>
-              <label class="form-item" for="name">Nombre</label>
-              <input class="form-item" name="name" type="text" placeholder="Ingrese aqui su Nombre y Apellido" required>
-              <label class="form-item" for="email">Correo Electronico</label>
-              <input class="form-item" name="email" type="email" placeholder="Ingrese aqui su correo" required>
-              <label class="form-item" fr="telefono">Telefono</label>
-              <input class="form-item" name="telefono" type="text" placeholder="Ingrese aqui su numero de telefono" required>
-              <label class="form-item" for="msj">Mensaje</label>
-              <input class="form-item" name="msj" type="text" placeholder="Ingrese aqui su mensaje" required>
-              <input class="form-item" type="submit" value="Enviar Mensaje">
-            </form>
-          </div>
+      <div class="row end-xs top-xs">
+        <div class="form-box col-xs-3 start-xs">
+          <form name="form_contacto" method="post" action="mailto:anvill_2002@hotmail.com">
+            <h3>Contacto</h3>
+            <label class="form-item" for="name">Nombre</label>
+            <input class="form-item" name="name" type="text" placeholder="Ingrese aqui su Nombre y Apellido" required>
+            <label class="form-item" for="email">Correo Electronico</label>
+            <input class="form-item" name="email" type="email" placeholder="Ingrese aqui su correo" required>
+            <label class="form-item" for="telefono">Telefono</label>
+            <input class="form-item" name="telefono" type="text" placeholder="Ingrese aqui su numero de telefono" required>
+            <label class="form-item" for="msj">Mensaje</label>
+            <!-- <input class="form-item txtarea" name="msj" type="text" placeholder="Ingrese aqui su mensaje" required> -->
+            <textarea class="form-item txtarea" name="msj" id="form_contacto" cols="21" rows="2" placeholder="Ingrese aqui su mensaje"></textarea>
+            <input class="form-item btn" type="submit">
+          </form>
         </div>
+      </div>
 
       <div class="box-bd row center-xs middle-xs">
 
@@ -71,28 +72,30 @@
   </header>
 
   <footer>
-      <div class="container-socialnetwork">
-        <div class="socialnetwork row">
-  
-          <div class="face">
-            <a href="https://web.facebook.com/mudanzasladino/" target="_blank"><img src="./img/icon/png/face.png" alt="Visita nuestra Página en Facebook, Mudanzas Ladino"></a>
-          </div>
-          <div class="insta">
-            <img src="./img/icon/png/insta.png" alt="Visitanos en nuestra red social Instagram">
-          </div>
-          <div class="telf-contacto col-xs-12">
-            Telefono de Contacto +56-931929175
-          </div>
-          <div class="direccion col-xs-12 center-xs">
-            <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3327.775229745834!2d-70.64782558518222!3d-33.48120228076519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c53620dea15d%3A0xd404ac7150ae7f73!2sCarnot+955%2C+San+Miguel%2C+Regi%C3%B3n+Metropolitana!5e0!3m2!1ses-419!2scl!4v1516151850395">Direccion: Carnot 955 El Llano, San Miguel</a>
-          </div>
-          <div class="Derechos col-xs-12 center-xs">
-            Todos los Derechos Reservados 2018. Angel Villasmil. email:
-            <a href="mailto:anvill_2002@hotmail.com">anvill_2002@hotmail.com</a>
-          </div>
+    <div class="container-socialnetwork">
+      <div class="socialnetwork row">
+
+        <div class="face">
+          <a href="https://web.facebook.com/mudanzasladino/" target="_blank">
+            <img src="./img/icon/png/face.png" alt="Visita nuestra Página en Facebook, Mudanzas Ladino">
+          </a>
+        </div>
+        <div class="insta">
+          <img src="./img/icon/png/insta.png" alt="Visitanos en nuestra red social Instagram">
+        </div>
+        <div class="telf-contacto col-xs-12">
+          Telefono de Contacto +56-931929175
+        </div>
+        <div class="direccion col-xs-12 center-xs">
+          <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3327.775229745834!2d-70.64782558518222!3d-33.48120228076519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c53620dea15d%3A0xd404ac7150ae7f73!2sCarnot+955%2C+San+Miguel%2C+Regi%C3%B3n+Metropolitana!5e0!3m2!1ses-419!2scl!4v1516151850395">Direccion: Carnot 955 El Llano, San Miguel</a>
+        </div>
+        <div class="Derechos col-xs-12 center-xs">
+          Todos los Derechos Reservados 2018. Angel Villasmil. email:
+          <a href="mailto:anvill_2002@hotmail.com">anvill_2002@hotmail.com</a>
         </div>
       </div>
-    </footer>
-  </body>
-  
-  </html>
+    </div>
+  </footer>
+</body>
+
+</html>
