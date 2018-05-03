@@ -280,8 +280,8 @@ footer a:hover{
   width           : 50px;
   opacity         : 0.5;
 }
-.socialnetwork .insta img {left: 14rem;}
- .socialnetwork .face img {left:8rem;}
+.socialnetwork .insta img {left: 10rem;}
+ .socialnetwork .face img {left:4rem;}
  .socialnetwork .face img:hover{
    opacity    : 1;
    cursor     : pointer;
@@ -299,4 +299,45 @@ footer a:hover{
  iframe {
    border-radius: 3px;
  }
+ .telf-contacto >p{
+   margin: 0;
+   padding: 0;
+ }
+ .telf-contacto > p:hover{
+   text-decoration: underline;
+   color: var(--border-color);
+   cursor: pointer;
+ }
+ .telf-contacto > p:target{
+  
+}
 
+ .modal {
+  position: absolute;
+  top: 0;
+  left: 0; 
+  width: 100%;
+  height: 100vh;
+  background-color: var(--third-color-rgba);
+  /*display: flex;*/
+  justify-content: center;
+  align-items: center;
+  display: none;
+  z-index: 100;
+}
+.modal-box {
+  width: 50%;
+  height: 50vh;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--accent-color);
+  border-radius: 5px;
+  border-style: dotted;
+  border-color: var(--dark-color);
+  border-width: 3px;
+}
+.modal:target{
+  display:flex;
+}
