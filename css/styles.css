@@ -1,0 +1,254 @@
+:root{
+    --cta-color         : #007BDF;
+    --cta-color-alt     :#006DC6;
+    --second-color      :#00CBFF;
+    --second-color-alt  : #00BFF0;
+    --first-color       : #FF3C32;
+    --first-color-alt   : #FF2419;
+    --first-color-rgba  : rgba(255,60,50,.5);
+    --third-color       : #FBA905;
+    --third-color-alt   : #F1A000;
+    --dark-color        : #282D31;
+    --dark-color-alt    : #141618;
+    --border-color      : #DFE0E0;
+    --text-color        : #53575A;
+    --text-color-alt    :rgb(152, 231, 223);
+    --body-bg           : #FAFDFF;
+    --html-bg           :rgb(143, 141, 141);
+    --font-size         : 16px;
+    --font-main         : roboto;
+    --font-second       : Raleway;
+    --line-height       : 1.6;
+    --header-height     : 4rem;
+    --max-width         : 1200px;
+}
+*,*::before, *::after{
+box-sizing          : border-box;
+}
+
+html {
+  background-color: var(--html-bg);
+  font-family     : var(--font-second),  sans-serif;
+  font-size       : var(--font-size);
+  line-height     : var(--line-height);
+  }
+img { max-width: 100%; }
+
+/* header {
+  margin-top: 2rem;
+  } */
+
+body{
+  position        : relative;
+  margin-right    : 10%;
+  margin-left     : 10%; 
+  margin-top      : 4rem;
+  color           : var(--text-color-alt);
+  background-color: var(--body-bg);
+  margin-top: calc(var(--header-height)*2);
+  align-items: center;
+  display: flex;
+}
+
+h1,h2,h3,h4,h5,h6, a{font-family: var(--font-main), sans-serif;}
+a {
+  text-decoration : none;
+  display         : inline-flex;
+  font-family: var(--font-main);
+}
+
+article {
+    font-family: var(--font-second), sans-serif;
+}
+.menu-container {
+    position            :fixed;
+    top                 : 4rem;
+    width               : 80%;
+    margin-right: auto;
+    margin-left: auto;
+    height              : var(--header-height);
+    background          : linear-gradient(to top right,  var(--first-color) , var(--first-color-rgba)),
+    url(../img/mud21.jpg);
+    background-size     : cover;
+    background-repeat   : no-repeat;
+    color               : var(--border-color);
+    font-size           :1.05rem;
+    z-index             : 10;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    display: flex;
+    
+}
+
+.logo-menu {
+    position    : relative;
+    padding-right    : 10px;
+}
+
+nav{
+  position        : relative;
+  height: var(--header-height);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+nav a {
+    color: var(--body-bg);
+    padding-right   : 15px;
+    padding-bottom: 15px;
+}
+nav a:hover {color: var(--third-color-alt);}
+
+nav a:first-child:hover,
+nav a:nth-child(2):hover,
+nav a:nth-child(3):hover, 
+nav a:last-child:hover{
+padding-bottom  : 13px;
+}
+
+nav a:first-child:hover{ border-bottom   : solid 2px yellow; }
+nav a:nth-child(2):hover{ border-bottom   : solid 2px rgb(0, 227, 243); }
+nav a:nth-child(3):hover{ border-bottom   : solid 2px rebeccapurple; }
+nav a:last-child:hover{ border-bottom   : solid 2px rgb(21, 250, 0); }
+
+.box-main-container {
+position: relative;
+padding-top: 15px;
+}
+
+.slider-container {
+
+}
+
+.box-main-left {
+align-items: center;
+justify-content: center;
+}
+
+.box-main-right{
+align-items: center;
+justify-content: center;
+}
+
+.box-phone-1{
+    display             : flex;
+    background-image    : linear-gradient(var(--third-color), var(--third-color-alt));
+    height              : 100px;
+    border-radius       : 3px;
+    box-shadow          : 2px 4px 5px rgba(0,0 ,0, .5);
+    margin-bottom: 15px;  
+}
+span, li{
+    color:var(--dark-color);
+    text-shadow: 1px 1px 0 whitesmoke;
+    font-weight: 700;
+}
+ li{
+     list-style: none;
+ }
+ li:hover{
+     text-decoration: underline;
+ }
+
+ span,
+ ul,
+ li {
+    margin-top: 0;
+    margin-bottom: 0;
+    
+ }
+
+ p {
+     margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+li::before {
+    content: '';
+    background-image: url(../img/icon/png/whatsapp.png);
+    background-size: contain;
+    display: inline-block;
+    width: 1.1rem;
+    height: 1.1rem;
+    margin-right: .2rem;
+    
+
+}
+
+form{
+    background-image    : linear-gradient(to bottom, var(--first-color) 60%, brown 95%);
+    color               : rgb(241, 193, 193);
+    border-radius       : 3px;
+    box-shadow          : 2px 4px 5px rgba(0,0 ,0, .5);
+    line-height         : var(--line-height);
+    z-index             : 1;
+    position: relative;
+    padding-bottom: 20px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+form > h3{
+    padding: 0;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.form-item{
+    margin-left: 24px;
+    margin-bottom: 5px;
+    padding: 0;
+}
+ .btn { text-align: center; }
+
+ input[type=submit] {
+    background-color      : var(--cta-color);
+    color                 : rgb(181, 226, 222);
+    margin-top            : .5rem;
+    margin-bottom         : .5rem;
+    align-items           : right;
+    border-radius         : 3px;
+    border                : none;
+    box-shadow            : 2px 2px 4px rgba(0,0 ,0, .5);
+    cursor                : pointer;
+    padding               : .3rem;
+  }
+  input[type=submit]:hover {
+    background-color      : var(--third-color);
+    color                 : rgb(181, 226, 222);
+    margin-top            : .5rem;
+    margin-bottom         : .5rem;
+    align-items           : right;
+    border-radius         : 3px;
+    border                : none;
+    box-shadow            : 2px 2px 4px rgba(0,0 ,0, .5);
+    cursor                : pointer;
+    padding               : .3rem;
+  }
+  
+  input[type=text] {
+  border-radius   : 3px;
+  padding         : .2rem;
+}
+  input[type=email] {
+  border-radius   : 3px;
+  padding         : .2rem;
+}
+  
+  textarea {
+    box-sizing          : border-box;
+    border              : 2px solid #ccc;
+    border-radius       : 4px;
+    background-color    : #f8f8f8;
+    resize              : none;
+  }
+
+.blog-title{
+position: relative;
+color: var(--text-color);
+padding-right: 10%;
+padding-left: 10%;
+}
+.blog_title{ margin-bottom: 0;}
+.main-article {text-align: left;}

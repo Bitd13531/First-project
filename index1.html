@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/flexboxgrid.min.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto:700" rel="stylesheet">
     <link rel="stylesheet" href="./css/animate.css">
 </head>
@@ -19,8 +19,19 @@
     <!-- Aqui contruyo el menu principal el cual estará dentro de menu-container para organizar todo -->
 
     <header>
-        <div class="menu-container">
-    
+        <div class="menu-container row start-lg between-lg middle-lg">
+
+                      <div class="logo-menu col-lg-3">
+                        <img src="./img/logo1.png">
+                      </div>
+                      <div  class="col-lg-6">
+                          <nav>
+                              <a href="index.html" class="nav-link">Inicio</a>
+                              <a href="services.html" class="nav-link">Servicios</a>
+                              <a href="form-contact.html" class="nav-link">Contactanos</a>
+                              <a href="oficinas.html" class="nav-link">Oficinas</a>
+                          </nav>
+                      </div>
         </div>
 
     </header>
@@ -28,26 +39,50 @@
     <!-- Aqui inicio a construir el contenedor con toda la informacion principal -->
 
     <div class="box-main-container">
-            <div class="slider-container">
+            <div class="slider-container row around-lg">
                 <!-- aqui esta ubicado ambos lados del slider en el left estara el slider y en el right el box-telefono
                 y el forumulario de contacto -->
 
-                <div class="box-main-left">
-
+                <div class="box-main-left col-lg-7">
+                    <img src="./img/mud12.jpg" alt="Mundazas Ladino, Los profesionales en Mudanzas">
                 </div>
-                <div class="box-main-right">
-                    <div class="box-phone-1">
-
+                <div class="box-main-right col-lg-4 row">
+                    <div class="box-phone-1 col-lg-12">    
+                         <div class="row">
+                             <p class="animated infinite flash col-xs-12 center-xs">
+                                 <span>Nuestros Telefonos:</span></p>
+                                    <ul class="col-xs-12 center-xs">
+                                        <div class="row center-xs">
+                                            <a class="col-xs-12 center-xs"href="https://api.whatsapp.com/send?phone=56931929175" target="_blank"><li>+56-931929175</li></a>
+                                            <a class="col-xs-12 center-xs" href="https://api.whatsapp.com/send?phone=56931929175" target="_blank"><li>+56-931929175</li></a>
+                                        </div>
+                                    </ul>
+                                
+                        </div>  
                     </div>
-                    
-                    <form action="">
 
+                    <form class="col-lg-12 start-lg" name="form_contacto" method="post" action="mailto:anvill_2002@hotmail.com">
+                            <h3>Contacto</h3>
+                            <div class="row">
+                                <label class="form-item col-xs-10 start-xs" for="name">Nombre</label>
+                                <input class="form-item col-xs-10 start-xs" name="name" type="text" placeholder="Ingrese aqui su Nombre y Apellido" required>
+                                <label class="form-item col-xs-10 start-xs" for="email">Correo Electronico</label>
+                                <input class="form-item col-xs-10 start-xs" name="email" type="email" placeholder="Ingrese aqui su correo" required>
+                                <label class="form-item col-xs-10 start-xs" for="telefono">Telefono</label>
+                                <input class="form-item col-xs-10 start-xs" name="telefono" type="text" placeholder="Ingrese aqui su numero de telefono" required>
+                                <label class="form-item col-xs-10 start-xs" for="msj">Mensaje</label>
+                                <textarea class="form-item txtarea col-xs-10 start-xs" name="msj" id="form_contacto" cols="21" rows="2" placeholder="Ingrese aqui su mensaje"></textarea>
+                                <input class="form-item btn col-xs-5 start-xs" type="submit">
+                            </div>
                     </form>
 
                 </div>
 
-                <div class="blog-title">
-
+                <div class="blog-title col-lg-12 center-xs">
+                        <h2 class="blog_title">Mudanzas Ladino</h2>
+                        <article class="main-article">El Mejor Servicio de Mudanzas y fletes en todo Chile, El mas rápido, el más seguro y el más confiable. Ofrecemos
+                          el mejor servicio con el precio mas bajo del mercado, por eso somos insuperables!
+                        </article>
                 </div>
 
             </div>
