@@ -64,6 +64,14 @@ article {
     font-family: var(--font-second), sans-serif;
 }
 
+.bg-top{
+    position: fixed;
+    top: 0;
+    background-color: var(--html-bg);
+    height: 4rem;
+    width: 100%;
+    z-index: 1;
+}
 
 .menu-container {
     position            :fixed;
@@ -187,7 +195,6 @@ form{
     border-radius       : 3px;
     box-shadow          : 2px 4px 5px rgba(0,0 ,0, .5);
     line-height         : var(--line-height);
-    z-index             : 1;
     position: relative;
     padding-bottom: 20px;
     align-items: center;
