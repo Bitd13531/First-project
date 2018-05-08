@@ -296,7 +296,7 @@ padding-left: 10%;
     background-color    : var(--cta-color-alt);
     border-radius       : 3px;
     box-shadow          : 2px 2px 5px rgba(0,0 ,0, .5);
-    margin-bottom       : 1rem;
+    margin-bottom       : .5rem;
     margin-left         : 0;
     padding-left        : 2%;
     padding-right       : 2%;
@@ -309,8 +309,10 @@ padding-left: 10%;
       margin-bottom: .3rem;
   }
   .box-post-img img{
-      border-radius: 30px;
-      padding: 6%;
+      border-radius: 38px;
+      padding: 8%;
+      width: 90%;
+      margin-bottom: 0;
   }
 
   footer{
