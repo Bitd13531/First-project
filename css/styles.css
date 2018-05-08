@@ -20,7 +20,7 @@
     --font-second       : Raleway;
     --line-height       : 1.6;
     --header-height     : 4rem;
-    --max-width         : 1200px;
+    --max-width         : 1368px;
 }
 *,*::before, *::after{
 box-sizing          : border-box;
@@ -31,6 +31,7 @@ html {
   font-family     : var(--font-second),  sans-serif;
   font-size       : var(--font-size);
   line-height     : var(--line-height);
+  max-width: var(--max-width);
   }
 img { max-width: 100%; }
 
@@ -47,14 +48,6 @@ body{
   display: flex;
 }
 
-
-/* main{
-  margin-right    : 10%;
-  margin-left     : 10%; 
-  position: absolute;
-  overflow: hidden;
-  width: 100%;
-} */
 
 h1,h2,h3,h4,h5,h6, a{font-family: var(--font-main), sans-serif;}
 a {
@@ -133,10 +126,6 @@ nav a:last-child:hover{ border-bottom   : solid 2px rgb(21, 250, 0); }
 .box-main-container {
 position: relative;
 padding-top: 15px;
-}
-
-.slider-container {
-
 }
 
 .box-main-left {
@@ -263,10 +252,11 @@ position: relative;
 color: var(--text-color-alt);
 padding-right: 10%;
 padding-left: 10%;
+margin-bottom: 15px;
 }
 .blog_title{ margin-bottom: 0;}
 
-.main-article {text-align: left;}
+.main-article {text-align: justify;}
 
 .blog {
     color: var(--text-color-alt);
@@ -296,7 +286,7 @@ padding-left: 10%;
     background-color    : var(--cta-color-alt);
     border-radius       : 3px;
     box-shadow          : 2px 2px 5px rgba(0,0 ,0, .5);
-    margin-bottom       : .5rem;
+    margin-bottom       : .8rem;
     margin-left         : 0;
     padding-left        : 2%;
     padding-right       : 2%;
@@ -404,9 +394,10 @@ padding-left: 10%;
         width: 100%;
         height: 100%;
         display: inline-flex;
-        margin-top: 15px;
+        margin-top: 55px;
         left: -4rem;
         justify-content: left;
+       
         
     }
     .social-flaticon{
@@ -418,3 +409,45 @@ padding-left: 10%;
     .social-flaticon:hover{
         opacity:1;
     }
+    .derechos, .credit{
+        font-size: 12px;
+    }
+
+@media screen and (max-width:480px){
+   
+   .slider{
+       display: none;
+   }
+  
+   nav{
+        display: flex;
+       background: linear-gradient(to top right,  var(--first-color) , var(--first-color-rgba)),
+    url(../img/mud21.jpg);
+       position: absolute;
+       flex-direction: column;
+       z-index: 1;
+       bottom: -100%;
+       right:-0.5%
+   }
+   nav a{
+       align-items: right;
+       display: inline-block;
+       border-bottom: solid 1px var(--text-color); 
+       display: none;
+   }
+   footer{
+       align-items: center;
+       justify-content: center;
+       left: 4%;
+   }
+}
+   @media screen and (max-width:762px){
+        .foot-left{ display: none; }
+       .foot-right{ display: none; }
+
+    .menu-container { font-size:.80rem; }
+    
+    nav{ justify-content: right; }
+    
+}
+
