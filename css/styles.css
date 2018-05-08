@@ -440,6 +440,7 @@ margin-bottom: 15px;
        justify-content: center;
        left: 4%;
    }
+  
 }
    @media screen and (max-width:762px){
         .foot-left{ display: none; }
@@ -448,6 +449,11 @@ margin-bottom: 15px;
     .menu-container { font-size:.80rem; }
     
     nav{ justify-content: right; }
+    iframe{
+        width: 230px;
+        height: 150px;
+    }
+    
     
 }
 
